@@ -8,10 +8,10 @@ import PostsProvider from './providers/PostsProvider';
 import AuthProvider from './providers/AuthProvider';
 
 render(
-    <PostsProvider>
-        <AuthProvider>
+    <AuthProvider>
+        <PostsProvider>
             <Application />
-        </AuthProvider>
-    </PostsProvider>,
+        </PostsProvider>
+    </AuthProvider>,
     document.getElementById('root')
 );
