@@ -5,7 +5,7 @@ import AddPost from './AddPost';
 const Posts = ({ posts, onCreate }) => {
   return (
     <section className="Posts">
-      <AddPost onCreate={onCreate} />
+      <AddPost />
       {posts.map(post => <Post {...post} key={post.id} />)}
     </section>
   )
